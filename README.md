@@ -7,3 +7,5 @@ install maven
 open cmd,  run command
 
 mvn clean install
+
+install mysql
