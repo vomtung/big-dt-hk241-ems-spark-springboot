@@ -16,10 +16,10 @@ public class EmsSparkSpringbootApplication {
 				.getOrCreate();
 
 		// Cấu hình kết nối JDBC URL, tên bảng, username và password
-		String jdbcUrl = "jdbc:mysql://localhost:3306/mydatabase";
-		String table = "my_table";
-		String user = "your_username";
-		String password = "your_password";
+		String jdbcUrl = "jdbc:mysql://localhost:3306/big_dt_hk241";
+		String table = "ems_master";
+		String user = "root";
+		String password = "123456";
 
 		// Đọc dữ liệu từ MySQL bằng JDBC
 		Dataset<Row> df = spark.read()
