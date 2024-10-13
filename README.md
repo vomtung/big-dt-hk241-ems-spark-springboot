@@ -41,7 +41,22 @@ bde2020/spark-master:latest
 docker run --name spark bitnami/spark:latest
 ````
 
+````bash
+docker run -it --rm \
+  --name spark-master \
+  -p 8080:8080 \
+  -p 7077:7077 \
+  bitnami/spark:latest \
+  /bin/bash -c "start-spark.sh"
+````
 
+````bash
+docker run -it --rm --name spark-master -p 8080:8080 -p 7077:7077 bitnami/spark:latest /opt/bitnami/spark/bin/spark-class org.apache.spark.deploy.master.Master
+
+````
+````bash
+docker ps
+````
 
 Step 2: Start Spark Worker Container
 To start the Worker containers, run:
