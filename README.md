@@ -37,6 +37,12 @@ bde2020/spark-master:latest
 - -p: Expose the necessary ports. Port 8080 is for the Spark Web UI, and 7077 is for the Spark cluster communication.
 
 
+```bash
+docker run --name spark bitnami/spark:latest
+````
+
+
+
 Step 2: Start Spark Worker Container
 To start the Worker containers, run:
 
